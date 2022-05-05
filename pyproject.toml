@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hcdiag-2022-04-27t200624z"
+version = "0.1.0"
+description = ""
+authors = ["esnyder <es@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Jinja2 = "^3.1.2"
+black = "^22.3.0"
+Markdown = "^3.3.6"
+semantic-version = "^2.9.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

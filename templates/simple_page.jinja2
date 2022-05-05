@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <page>
+            <header>
+                <h1>Vault HCDiag Example</h1>
+            </header>
+            <content>
+            {% block content %}
+            {% endblock %}
+            </content>
+            <footer>
+                
+            </footer>
+        </page>
+    </body>
+    <style>
+        body, html {
+            background-color: gray;
+            margin: auto;
+            -webkit-print-color-adjust: exact !important;
+        }
+        page {
+            background-color: white;
+            height: 11in;
+            width: 8.5in;
+            display: block;
+        }
+        .warningheader {
+            background-color: red;
+            color: white;
+            padding: 0.1in;
+            margin: 0;
+        }
+        .warning {
+            background-color: pink;
+            color: red;
+            border: 1px solid darkred;
+            padding: 0.1in;
+            margin: 0;
+        }
+
+        .passheader {
+            background-color: green;
+            color: white;
+            padding: 0.1in;
+            margin: 0;
+        }
+        .passmessage {
+            background-color: lightgreen;
+            color: green;
+            border: 1px solid darkgreen;
+            padding: 0.1in;
+            margin: 0;
+        }
+
+        content {
+            margin: 0.1in;
+            display: block;
+        }
+    </style>
+</html>

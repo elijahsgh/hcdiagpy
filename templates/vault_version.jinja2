@@ -1,0 +1,19 @@
+{% extends "simple_page.jinja2" %}
+{% block content %}
+    {% if in_spec == False %}
+    <div>
+        <div class="warningheader">Vault Version out of spec</div>
+        <p class="warning">
+           Vault version should be within 2 minor versions of the latest Vault release. 
+        </p>
+    </div>
+    {% endif %}
+    {% if in_spec == True %}
+    <div>
+        <div class="passheader">✓ Vault Version</div>
+        <p class="passmessage">
+           Vault version is within 2 minor versions of the latest Vault release. 
+        </p>
+    </div>
+    {% endif %}    
+{% endblock %}
